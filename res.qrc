@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>images/3.jpg</file>
+        <file>images/5.jpg</file>
+        <file>images/6.jpg</file>
+        <file>images/9.jpg</file>
+        <file>images/36.jpg</file>
+        <file>images/66.jpg</file>
+        <file>images/809.jpg</file>
+        <file>images/890.jpg</file>
+        <file>images/RED.jpg</file>
+        <file>images/蝴蝶.jpg</file>
+        <file>images/金鱼.jpg</file>
+        <file>images/马.jpg</file>
+        <file>images/蜻蜓.jpg</file>
+        <file>images/五角星.jpg</file>
+        <file>images/圆形.jpg</file>
+    </qresource>
+</RCC>
