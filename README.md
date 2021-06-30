@@ -1,0 +1,2 @@
+# color_blind_detection_system
+基于Qt的色盲检测系统
