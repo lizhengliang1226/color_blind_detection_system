@@ -18,7 +18,18 @@
 {
 border-radius:5px;
 
-}</string>
+}
+QWidget
+{
+background-color: #84AF9B;
+}
+#btn_a:checked,#btn_b:checked,#btn_c:checked
+{
+background-color:rgb(89, 124, 255);border:2px solid #ccc;
+}
+
+
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
@@ -34,6 +45,9 @@ border-radius:5px;
      <font>
       <pointsize>30</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;</string>
     </property>
     <property name="text">
      <string>色盲检测系统</string>
@@ -79,7 +93,8 @@ border-radius:5px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:#5bc0de;
+     <string notr="true">
+background-color:#5bc0de;
 border-radius:5px;</string>
     </property>
     <property name="text">
@@ -101,8 +116,14 @@ border-radius:5px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:#d9534f;
-border-radius:5px;</string>
+     <string notr="true">
+#btn_confirm
+{background-color:#d9534f;
+border-radius:5px;
+color:white;
+
+}
+</string>
     </property>
     <property name="text">
      <string>获取结果</string>
@@ -125,6 +146,9 @@ border-radius:5px;</string>
     <property name="text">
      <string>C</string>
     </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
     <attribute name="buttonGroup">
      <string notr="true">answerGroup</string>
     </attribute>
@@ -133,7 +157,7 @@ border-radius:5px;</string>
     <property name="geometry">
      <rect>
       <x>790</x>
-      <y>190</y>
+      <y>200</y>
       <width>131</width>
       <height>61</height>
      </rect>
@@ -144,10 +168,21 @@ border-radius:5px;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-redius:5px;</string>
+     <string notr="true">
+#btn_b
+{
+border-redius:5px;
+}
+</string>
     </property>
     <property name="text">
      <string>B</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
     </property>
     <attribute name="buttonGroup">
      <string notr="true">answerGroup</string>
@@ -173,6 +208,9 @@ border-radius:5px;</string>
     <property name="text">
      <string>A</string>
     </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
     <attribute name="buttonGroup">
      <string notr="true">answerGroup</string>
     </attribute>
@@ -194,6 +232,30 @@ border-radius:5px;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_show">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>490</y>
+      <width>100</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:20px;
+border-radius:25px;
+background-color:#5bc0de;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>1/15题</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
